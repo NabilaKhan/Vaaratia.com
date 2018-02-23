@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Welcome Home </title>
+		<meta charser="utf-8">
+		
+		<link href='' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="add_property/p2_page3.css">
+		<link rel="stylesheet" type="text/css" href="add_property/style.css">
+		
+		
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+		integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+	</head>
+	<body>
+		<header class="ok">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<h1><strong class="hh1">VaraTia.Com</strong></h1>
+				<br/><h3 style="color:white;float:left; text-align: left;font-family:Bradley Hand ITC">
+				<strong>We make your bachelor life easier...</strong></h3>
+				
+			</div>
+		</div>
+		</header>
+		
+		
+		
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li><a href="#">Add Property</a></li>
+        <li><a href="#">Rent Flat</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-target="#modal-login">Log Out</a></li>
+		<li><a href="registration/registration.html">Registration</a></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	<div class="sidebar">
+		<img src="add_property/nav.jpg" width="250" height="150">
+			<h2><br/>MENU</h2>
+				
+		<ul>
+			<li><a href="">Profile</a></li>
+			<li><a href="">Map>></a></li>
+			<li><a href="">All Properties</a></li>
+			<li><a href="">Registration</a></li>
+			<li><a href="">Contact Us</a></li>
+			<li><a href="">Help</a></li>
+			<li><a href="">Policies</a></li>
+			<li><a href="">Useful Links</a></li>
+					
+		</ul>
+	</div>
+			
+	<div class="contenido" >
+		<img src="add_property/menu_icon.png" style="floating:left" alt="" class="menu-bar">
+		<div>
+		<h1><b>It's free & easy to list your place</b></h1>
+	</div>
+	
+	<div class="mid">
+	<form action="property.php" method="post" id="property" enctype="multipart/form-data">
+	
+	<h4>The basics ______________________________________________________________________________________________________________________________________________</h4>
+	
+	<br/>
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">Rent per month =/</label>
+				</div>
+				
+				<div class="col-sm-2">
+				<input type="number" name="rent" max="999999" value="" id="rent" data-valid="0" size="6" maxlength="6" >
+				</div>
+		</div>
+	</div>
+	<br>
+		
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">Advance =/</label>
+				</div>
+				
+				<div class="col-sm-2">
+				<input type="number" name="advance" max="999999" value="" data-valid="0" size="6" maxlength="6" >
+				</div>
+		</div>
+	</div>
+	<br>
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-9">
+				<div class="col-sm-2">
+				<label for="rent">Available on</label>
+				</div>
+				
+				<div class="col-sm-1">
+				<select class="textfield" data-toggle="dropdown" name="date">
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="audi">04</option>
+					<option value="saab">05</option>
+					<option value="fiat">06</option>
+					<option value="audi">07</option>
+					<option value="saab">08</option>
+					<option value="fiat">09</option>
+					<option value="audi">10</option>
+					<option value="saab">11</option>
+					<option value="fiat">12</option>
+					<option value="audi">13</option>
+					<option value="saab">14</option>
+					<option value="fiat">15</option>
+					<option value="audi">16</option>
+					<option value="saab">17</option>
+					<option value="fiat">18</option>
+					<option value="audi">19</option>
+				</select>
+				</div>
+				
+				<div class="col-sm-1">
+				<select class="textfield" data-toggle="dropdown" name="month">
+					<option value="volvo">January</option>
+					<option value="saab">February</option>
+					<option value="fiat">March</option>
+					<option value="audi">April</option>
+					<option value="saab">May</option>
+					<option value="fiat">June</option>
+					<option value="audi">July</option>
+					<option value="saab">August</option>
+					<option value="fiat">September</option>
+					<option value="audi">October</option>
+					<option value="saab">November</option>
+					<option value="fiat">December</option>
+					
+				</select>
+				</div>
+				
+				<div class="col-sm-1">
+				<select class="textfield" data-toggle="dropdown" name="year">
+					<option value="volvo">2016</option>
+					<option value="saab">2017</option>
+				</select>
+				</div>
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+			<div class="col-sm-7">
+				<div class="col-sm-3">
+				<label for="rent">To Stay</label>
+				</div>
+				
+				<div class="col-sm-4">
+				<input type="checkbox" name="vehicle" value="Bike"> Long Term(6+ months)<br>
+				<input type="checkbox" name="vehicle" value="Car" checked> Short Term<br>
+				</div>
+			</div>
+	</div>
+	
+	<h4>The Address _____________________________________________________________________________________________________________________________________________</h4>
+	
+	<br>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">Area</label>
+				</div>
+				
+				<div class="col-sm-2">
+					<div class="styled-select blue semi-square">
+				
+						<select data-toggle="dropdown" name="area">
+							<option>select area</option>
+							<option>Mirpur</option>
+							<option>Farmgate</option>
+						</select>
+					</div>
+				</div>
+		</div>
+	</div>
+	<br>
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">Location</label>
+				</div>
+				
+				<div class="col-sm-2">
+				<input type="text" name="location" class="textfield">
+				</div>
+		</div>
+	</div>
+	
+	<br>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">Address</label>
+				</div>
+				
+				<div class="col-sm-2">
+				<input type="text" name="address" class="textfield">
+				</div>
+		</div>
+	</div>
+	<br>
+	
+	<h4>The Details _____________________________________________________________________________________________________________________________________________</h4>
+	
+	
+	<div class="row">
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-2">
+			<h3><span style="opacity:0.0">no</span><b>The Property<b></h3>
+			<br>
+		</div>
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-2">
+		<h3><span style="opacity:0.0">nos</span><b>The Rooms<b></h3>
+			<br>
+		</div>
+		<div class="col-sm-3">
+		</div>
+		
+	</div>
+	
+	
+	
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-2">
+		<div class="styled-select blue semi-square">
+			
+			<select data-toggle="dropdown" name="occupation">
+				<option>Tenant Occupation</option>
+				<option>Student</option>
+				<option>Service Holder</option>
+				<option>Any</option>
+			</select>
+		</div>
+		<br>
+		
+		<div class="styled-select blue semi-square">
+			
+			<select data-toggle="dropdown" name="gender">
+				<option>Preferred tenant</option>
+				<option>Male</option>
+				<option>Female</option>
+			</select>
+		</div>
+		<br>
+		
+		</div>
+		
+		<div class="col-sm-2">
+		</div>
+		
+		<div class="col-sm-2">
+		<div class="styled-select blue semi-square">
+			
+			<select data-toggle="dropdown" name="room_no">
+				<option>room no.</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+		</div>
+		<br>
+		
+		<div class="styled-select blue semi-square">
+			
+			<select>
+				<option>Here is the option</option>
+				<option>The second option</option>
+				<option>The third option</option>
+			</select>
+		</div>
+		</div>
+		
+		<div class="col-sm-3">
+		</div>
+		
+	</div>
+	<br>
+	<center>
+	<div class="row">
+	
+	<input type="file" name="file_img" />
+	<input type="submit" name="btn_upload" value="Upload">	
+	
+	</div>
+	</center>
+	<br>
+	
+	<div class="row">
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-6">
+		 <textarea style="width: 760px; height: 120px; border: 3px solid #cccccc; padding: 5px;" name="message" rows="10" cols="30">Additional Features...</textarea>
+		</div>
+		<div class="col-sm-3">
+		</div>
+		
+	</div>
+	<br>
+	
+	<h4>Renter Information _______________________________________________________________________________________________________________________________________</h4>
+	
+	<br>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">E-mail</label>
+				</div>
+				
+				<div class="col-sm-2">
+				<input style="width:190px" type="text" name="email"  value=""  data-valid="0" size="20" maxlength="20">
+				</div>
+		</div>
+	</div>
+	<br>
+	
+	
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">Name</label>
+				</div>
+				
+				<div class="col-sm-2">
+				<input style="width:190px" type="text" name="name"  value=""  data-valid="0" size="20" maxlength="20">
+				</div>
+		</div>
+	</div>
+	<br>
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+				<div class="col-sm-3">
+				<label for="rent">Number</label>
+				</div>
+				
+				<div class="col-sm-2">
+				<input style="width:190px" type="text" name="number"  value="" data-valid="0" size="20" maxlength="20">
+				</div>
+		</div>
+	</div>
+	<br>
+	
+	<div class="row topgap">
+				
+		
+		<center><input style="font-size:20px;" type="submit" class="bluebutton" value="List My Place"></center>
+				
+	</div>
+	
+	<br>
+			
+	</form>
+	
+	</div>
+	
+	<div class="mid4" style="background-color:#00997a">
+		<br/><br/>
+	</div>
+	
+	<div class="mid5">
+		<br/><br/>
+		<p style="font-size:70px" ><a href="" color="#5c0099">About Us</a><p></br>
+		</br>
+		<br/><br/><br/><br/>
+	</div>
+	
+	<div class="ending" style="background-color:#00997a">
+	<br/><br/><br/><br/>
+	</div>
+	
+	<meta charset="UTF-8">
+	<title>Footer</title>
+
+
+	<footer id="page-footer">
+		<div class="inner">
+			<section id="footer-thumbnails" class="footer-thumbnails"></section><!-- /#footer-thumbnails -->
+			<section id="footer-copyright">
+				<div class="container">
+					<a href="http://Vaaratia.com/" target="blank">© Vaaratia.com,</a> 
+					<span>Powered by</span>    
+					<a href="http://getbootstrap.com/" target="blank">Mamun Sir</a>                
+					<img class="pull-right bank-logo" alt="" src="add_property/master-card.png">
+					<img class="pull-right bank-logo" alt="" src="add_property/visa.png">
+					<img class="pull-right bank-logo" alt="" src="add_property/stripe.png">
+					<img class="pull-right bank-logo" alt="" src="add_property/paypal.png">
+					<span class="pull-right">We accept:</span>
+				</div>
+			</section>
+		</div><!-- /.inner -->
+	</footer>
+	
+	
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+		crossorigin="anonymous"></script>
+	
+	<script src="add_property/abrir.js"></script>
+	
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</body>
+</html>

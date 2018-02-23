@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Welcome Home </title>
+		<meta charser="utf-8">
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="p2_page3/p2_page3.css">
+		<link rel="stylesheet" type="text/css" href="p2_page3/style.css">
+		<link rel="stylesheet" type="text/css" href="p2_page3/bootstrap.css">
+		
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+		integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+		<style>
+			.select-location{
+			 width: 690px;
+			 height: 40px;
+			 border-radius: 5px;
+			 background-image: url(p2_page3/images/arrow.gif), 
+			 -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+			  background-position: center right;
+			  background-repeat: no-repeat;
+			 text-overflow: ellipsis;
+			 font-size: 25px;
+			  
+			}
+			
+			.input-style{
+			 width: 300px;
+			 height: 40px;
+			 border-radius: 5px;
+			
+			 -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+			 
+			  background-repeat: no-repeat;
+			 text-overflow: ellipsis;
+			 font-size: 25px;
+			 color:black;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<header class="ok">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<h1><strong class="hh1">VaraTia.Com</strong></h1>
+				<br/><h3 style="color:white;float:left; text-align: left;font-family:Bradley Hand ITC">
+				<strong>We make your bachelor life easier...</strong></h3>
+				
+			</div>
+		</div>
+		</header>
+		
+		
+		
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li><a href="#">Add Property</a></li>
+        <li><a href="#">Rent Flat</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-target="#modal-login">Log In</a></li>
+		<li><a href="registration/registration.html">Registration</a></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	<div class="sidebar">
+		<img src="p2_page3/nav.jpg" width="250" height="150">
+			<h2><br/>MENU</h2>
+				
+		<ul>
+			<li><a href="">Profile</a></li>
+			<li><a href="">Map>></a></li>
+			<li><a href="">All Properties</a></li>
+			<li><a href="">Registration</a></li>
+			<li><a href="">Contact Us</a></li>
+			<li><a href="">Help</a></li>
+			<li><a href="">Policies</a></li>
+			<li><a href="">Useful Links</a></li>
+					
+		</ul>
+	</div>
+			
+	<div class="contenido" >
+		<img src="p2_page3/menu_icon.png" style="floating:left" alt="" class="menu-bar">
+		<div>
+	</div>
+	
+	<div style="background-color:#00664d; margin:0; padding:0">
+		</br>
+		<h1 style="text-align:center; color:white; font-family:cooper black; font-style:italic"><strong>Find Flat</strong></h1>
+		
+	</div>
+	<div class="heading">
+	<div class="transbox">
+	<p style="text-align:center; font-size:50px; font-weight:bold;margin:5px; color:#1a001a; font-style:italic"><strong>Search By Categories</strong></p>
+	</div>
+	</div>
+	
+	<div class="mid">
+	<br/><br/><br/>
+	<form id="" action="p2_page3/listing/listing.php" method="post"> 
+	<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div  class="form">
+    		
+    			
+            <select class="select-location" name="areaa">
+            <option value="select">Location...</option>
+            <option value="Mirpur">Mirpur</option>
+            <option value="Farmgate">Farmgate</option>
+            <option value="others">Other</option>
+            </select><br><br>
+            
+			 
+		</div><!-- /.col-lg-6 -->
+			
+	</div>
+	</div>
+	
+	<br/><br/>
+	
+	<div class="row">
+	<div  class="form">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-3">
+		
+    		
+    			
+            <input class="input-style" type="number" name="first_price" placeholder="Price From..." min="1000" max="1000000">
+            
+			
+		
+	</div><!-- /.col-lg-6 -->
+			
+			
+	<div class="col-sm-3">
+		
+    		
+    			
+            <input class="input-style" type="number" name="second_price" placeholder="Price To..." min="1000" max="1000000">
+            
+			 
+		
+	</div><!-- /.col-lg-6 -->
+	</div>
+	
+	</div>
+	
+	
+	
+	
+	<div class="row">
+	
+	<div class="col-sm-6"></div>
+	<div class="col-sm-4">
+	<h3 style="color:white;font-style:italic"><b>What Are the Features You Must Have?</b></h3>
+	</div>
+	</div>
+	
+	<div class="row">
+	<div class="col-sm-6"></div>
+	<div class="col-sm-2">
+	<div class="box">
+	<p><strong>Male flatmate</strong></p>
+	</div></div>
+	
+	<div class="col-sm-2">
+	<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+	</div></div>
+	</div>
+	
+	<div class="row">
+	<div class="col-sm-6"></div>
+	<div class="col-sm-2">
+	<div class="box">
+	<p><strong>Female flatmate</strong></p>
+	</div></div>
+	
+	<div class="col-sm-2">
+	<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+    <label class="onoffswitch-label" for="myonoffswitch2">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+	</div></div>
+	</div>
+	
+	<div class="row">
+	<div class="col-sm-6"></div>
+	<div class="col-sm-2">
+	<div class="box">
+	<p><strong>Student flatmate</strong></p>
+	</div></div>
+	
+	<div class="col-sm-2">
+	<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked>
+    <label class="onoffswitch-label" for="myonoffswitch3">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+	</div></div>
+	</div>
+	
+	<br/>
+	
+	<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<input class="button button_purple" name="submit" id="submit" tabindex="5" value="Submit!" type="submit"> 
+	</div>
+	<div class="col-sm-3"></div>
+	</div>
+	</form>
+	<br/>
+	
+	</div>
+	
+	<div class="mid4" style="background-color:#00997a">
+		<br/><br/>
+	</div>
+	
+	<div class="mid5">
+		<br/><br/>
+		<p style="font-size:70px" ><a href="" color="#5c0099">About Us</a><p></br>
+		</br>
+		<br/><br/><br/><br/>
+	</div>
+	
+	<div class="ending" style="background-color:#00997a">
+	<br/><br/><br/><br/>
+	</div>
+	
+	<meta charset="UTF-8">
+	<title>Footer</title>
+
+
+	<footer id="page-footer">
+		<div class="inner">
+			<section id="footer-thumbnails" class="footer-thumbnails"></section><!-- /#footer-thumbnails -->
+			<section id="footer-copyright">
+				<div class="container">
+					<a href="http://Vaaratia.com/" target="blank">© Vaaratia.com,</a> 
+					<span>Powered by</span>    
+					<a href="http://getbootstrap.com/" target="blank">Mamun Sir</a>                
+					<img class="pull-right bank-logo" alt="" src="master-card.png">
+					<img class="pull-right bank-logo" alt="" src="visa.png">
+					<img class="pull-right bank-logo" alt="" src="stripe.png">
+					<img class="pull-right bank-logo" alt="" src="paypal.png">
+					<span class="pull-right">We accept:</span>
+				</div>
+			</section>
+		</div><!-- /.inner -->
+	</footer>
+	
+	<!-- Modal login, register, custom gallery -->
+	<div id="login-modal-open">
+
+
+	<meta charset="UTF-8">
+	<title>Modal log in</title>
+
+
+	<div id="modal-login" class="modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close" data-dismiss="modal"><img src="p2_page3/cross.png"></button>
+					<h2 style="font-family:cooper black; color:#330066">Sign in to your account:</h2>
+					<span style="font-style:italic;color:#00664b;font-size:20px"><b>Welcome to the home!</b></span>
+				</div>
+				<form action="http://themes.fruitfulcode.com/suburb/thank_you_page.html">
+					<div class="modal-body">
+						<div class="form-group">
+							<input type="text" name="user-email" placeholder="Email:" required="">
+							<span class="fa fa-at"></span>
+						</div>				
+						<div class="form-group">
+							<input type="password" name="password" placeholder="Password:" required="">
+							<span class="fa fa-lock"></span>
+						</div>
+						<div class="form-group social-login clearfix">
+							<a href="https://www.facebook.com/" class="col-md-6 fb-login" target="blank" style="font-size:20px"><span class="fa fa-facebook-square"><img src="p2_page3/facebook.png"></span>Facebook login</a>
+							<a href="https://plus.google.com/" class="col-md-6 google-login" target="blank" style="font-size:20px"><span class="fa fa-google-plus-square"><img src="p2_page3/google.png"></span>Google login</a>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="form-group clearfix">
+							<span style="font-size:15px"><b>Don't have an account?</b> <a href="registration/registration.html" style="color:#0066ff ;font-size:15px"><b>Sign Up</b></a></span>
+							
+							<button type="submit" class="btn " style="background-color:#5900b3"><b>Login</b></button>					
+						</div>
+					</div>		
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+		crossorigin="anonymous"></script>
+	
+	<script src="p2_page3/abrir.js"></script>
+	
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</body>
+</html>
